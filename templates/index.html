@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Code Clan Events</h1>
+{% for event in events %}
+
+<section>
+    <p>
+        <p>Date: {{event.date}}</p>
+        <p>Name of Event: {{event.event_name}}</p>
+        <p>Number of Guests: {{event.num_guests}}</p>
+        <p>Room Location: {{event.room_loc}}</p>
+        <p>Description: {{event.description}}</p>
+    </p>
+    <hr>
+</section>
+{% endfor %}
+
+{% endblock %}

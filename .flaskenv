@@ -1,0 +1,2 @@
+FLASK_APP=codeclan_events.py
+FLASK_ENV=development
